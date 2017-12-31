@@ -81,7 +81,7 @@ int isDiag(VECTOR * vector) {
         return 0;
     }
     double angle = acos(dot(base, vector) / (vectorMag(base) * vectorMag(vector)));
-    printf("Angle: %lf \n", angle);
+    
     if (round_dec(angle, 3) == round_dec(DIAG_ANGRAD, 3)) {
         return 1;
     } else {
